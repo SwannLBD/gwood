@@ -5,8 +5,8 @@
 <title>settings</title>
 
 	<link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/swann.css">
-	<link rel="stylesheet" href="css/etienne.css">
+	<link rel="stylesheet" href="css/style.css">
+	
 
 </head>
 
