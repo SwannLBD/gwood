@@ -34,7 +34,7 @@ HEADER
 
 	text-decoration: underline;
 }
-	
+
 /****Block Connexion****/
 
 .form-connexion {
@@ -70,4 +70,249 @@ HEADER
 
 .form-connexion .btn-connect:hover {
 	border-bottom: solid .1rem #47360b;
+}
+
+/*****************************************************************************************
+G.PHOTOS
+*****************************************************************************************/
+
+.inner-photos {
+	background-image: url('../images/externeSwann/wood-_texture3177.jpg');
+}
+
+.inner-photos .title {
+	color: white;
+	padding: 2rem;
+	font-weight: bolder;
+}
+
+.carousel-inner .row .img-1 {
+	margin: 1rem 0;
+	display: flex;
+	padding-top: 1rem;
+	padding-bottom: 8rem;
+}
+
+.row .img-1 .card {
+	width: 20rem;
+	margin: auto;
+}
+
+.row .img-1 .card > img {
+	height: 22rem;
+}
+
+.img-1 .card .card-body {
+	display: flex;
+}
+
+.card .card-body .item-photo {
+	background: none;
+	border: none;
+	margin: auto;
+}
+
+.img-1 .card .card-body ul{
+	display: flex;
+	width: 100%;
+	padding: 0;
+	margin-bottom: 0;
+}
+
+.img-1 .card .card-body li{
+	list-style: none;
+	display: inline-block;
+	margin: auto;
+}
+
+.carousel-control {
+	margin: 0 -3rem;
+}
+
+
+/*****************************************************************************************
+PANIER
+*****************************************************************************************/
+
+.container-panier {
+	background: url('../images/background/forêt.jpg') no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	display: flex;
+}
+
+
+.container-panier .inner-panier {
+	margin: 5% auto;
+	background: rgba(253, 254, 240, 0.7);
+}
+
+.container-panier .inner-panier .list-panier li {
+	display: flex;
+	align-items: flex-start;
+}
+
+.container-panier .inner-panier .scroll {
+	min-height: 20rem;	
+}
+
+.container-panier .inner-panier .list-panier img {
+	width: 10%;
+	margin: auto 0 ;
+}
+
+.inner-panier .list-panier .text {
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.container-panier .inner-panier .list-panier h4, 
+.container-panier .inner-panier .list-panier h5  {
+	text-transform: uppercase;
+	color: #47360b;
+	margin: auto;
+}
+
+.container-panier .inner-panier .list-panier h4 {
+	margin-bottom: 1rem;
+}
+
+.inner-panier .list-panier .right {
+	display: flex;
+	flex-direction: column;
+	margin: auto 0;
+}
+
+.inner-panier .list-panier .right a {
+	width: 130%;
+	margin: 1rem 0 0 1rem;
+}
+
+.list-panier .right .prix-article {
+	background: #47360b;
+	color: #fefdf0;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	padding: .5rem 1rem;
+	margin: 1.5rem 1.5rem 0 0;
+	display: flex;
+}
+
+.list-panier .right .prix-article p {
+	margin: auto
+}
+
+.container-panier .inner-panier .prix-total {
+	display: flex;
+	align-content: flex-end;
+	justify-content: space-between;
+}
+
+.inner-panier .prix-total .prix-title {
+	background: #47360b;
+	color: #fefdf0;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0 .5rem 0 auto;
+	padding: 0 1rem;
+	font-size: 2rem;
+	display: flex;
+}
+
+.inner-panier .prix-total .prix-title p{
+	margin: auto;
+}
+
+.inner-panier .prix-total .affichage-prix {
+	color: #47360b;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0 auto 0 .5rem;
+	padding: 0 1rem;
+	font-size: 2rem;
+	border: solid .05rem #47360b;
+	display: flex;
+}
+
+.inner-panier .prix-total .affichage-prix p {
+	margin: auto;
+}
+
+.container-panier .inner-panier .command-button {
+	display: flex;
+}
+
+.container-panier .inner-panier .commander {
+	margin: 1rem auto;
+	padding: 0;
+	border: none;
+	background: none;
+	text-transform: uppercase;
+	color: #47360b;
+	font-size: 2rem;
+}
+
+/*****************************************************************************************
+LISTE
+*****************************************************************************************/
+
+.list-container {
+	background: url('../images/externeSwann/wood-texture.jpg') no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+
+}
+
+.list-container .list-inner {
+	background: rgba(253, 254, 240, 0.7);
+	margin: 0 15%;
+}
+
+
+.list-container .list-inner .choix {
+	margin: 1rem auto;
+}
+
+.list-inner .choix .text {
+	display: flex;
+	flex-direction: column;
+}
+
+.list-inner .choix .text h3,
+.list-inner .choix .text p, 
+.choix .text .prix {
+	margin: auto;
+}
+
+.list-container .list-inner .choix {
+	display: flex;
+	flex-direction: column;
+}
+
+.list-inner	.choix .image-choix {
+	display: flex;
+	margin: auto;
+}
+
+.choix .image-choix img{
+	width: 13rem;
+	margin: auto;
+}
+
+.choix .text a{
+	margin: auto;
+	text-align: center;
+	text-decoration: none;
+	color: #47360b;
+}
+
+.choix .text a:hover {
+	color: black;
+}
+
+.choix .prix {
+	font-size: 2rem;
+	color: #47360b;
 }
