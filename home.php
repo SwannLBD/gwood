@@ -164,6 +164,9 @@
 			</div>
 		</div>	
 	</div>	
+	
+	
+	
 
 <?php include 'parts/footer.php' ?>
 

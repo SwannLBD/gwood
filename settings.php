@@ -14,7 +14,7 @@
 	<?php include 'parts/header.php' ?>
 		<div class="block_center2">
 			<div class="container">
-				<form>
+				<form action="phpsettings.php" method="post">
 					<div class="form-group">
    						<label for="exampleInputName">Nom</label>
     					<input type="Name" class="form-control" id="exampleInputName" aria-describedby="NameHelp" placeholder="Votre adresse nom">
