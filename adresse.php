@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="vendors/Bootstrap/Bootstrap-Design/vendors/bootstrap/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>

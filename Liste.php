@@ -5,12 +5,9 @@
 <title>Liste guitare</title>
 
 	<link rel="stylesheet" href="vendors/Bootstrap/Bootstrap-Design/vendors/bootstrap/css/bootstrap.min.css">
-<<<<<<< HEAD
-    <link rel="stylesheet" href="css/etienne.css">
-    <link rel="stylesheet" href="css/swann.css">
-=======
+
     <link rel="stylesheet" href="css/style.css">
->>>>>>> etienne
+
 </head>
 
 <body>

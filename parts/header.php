@@ -11,7 +11,7 @@
 	</nav>
 	
 	<div class="form-connexion">
-		<form>
+		<form action="connexion.php" method="POST">
 			<input type="text" class="mail" placeholder="Email">			
 			<input type="password" class="mdp" placeholder="Mot de passe">
 			<button type="submit" class="btn-connect">Connexion </button>
