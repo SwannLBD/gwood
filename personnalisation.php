@@ -42,5 +42,9 @@
 	</div>
 
 <?php include 'parts/footer.php' ?>
+	
+	<script src="vendors/Bootstrap/Bootstrap-Design/vendors/jquery/jquery.min.js"></script>
+	<script src="vendors/Bootstrap/Bootstrap-Design/vendors/popper/popper.min.js"></script>
+	<script src="vendors/Bootstrap/Bootstrap-Design/vendors/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

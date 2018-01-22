@@ -5,8 +5,6 @@
 <title>home</title>
 
 	<link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/swann.css">
-	<link rel="stylesheet" href="css/etienne.css">
 	<link rel="stylesheet" href="css/style.css">
 	
 
@@ -171,6 +169,10 @@
 	
 
 <?php include 'parts/footer.php' ?>
+	
+	<script src="vendors/Bootstrap/Bootstrap-Design/vendors/jquery/jquery.min.js"></script>
+	<script src="vendors/Bootstrap/Bootstrap-Design/vendors/popper/popper.min.js"></script>
+	<script src="vendors/Bootstrap/Bootstrap-Design/vendors/bootstrap/js/bootstrap.min.js"></script>
 
 </body>
 
