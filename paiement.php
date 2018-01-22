@@ -2,36 +2,36 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Adresse</title>
-
+<title>Paiement</title>
+	
 	<link rel="stylesheet" href="vendors/Bootstrap/Bootstrap-Design/vendors/bootstrap/css/bootstrap.min.css">
-
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
+	
 	<?php include('parts/header.php') ?>
-	<div class="container-adresse">
-		<div class="inner-adresse">
+	<div class="container-paye">
+		<div class="inner-paye">
 			<form action="#" method="POST">
 				<div class="element first">
-					<label>Adresse : </label>
-					<input type="text" class="adresse" placeholder="Veuillez indiquer votre adresse">
+					<label>Numéro de carte : </label>
+					<input type="text" class="num" placeholder="Veuillez indiquer votre numéro de carte">
 				</div>
 				<div class="element second">
-					<label>Code Postal : </label>
-					<input type="text" class="adresse" placeholder="Veuillez indiquer votre code postale">
+					<label>Date d'expiration : </label>
+					<input type="month" min="2018-01" max="2050-12" class="expiration">
 				</div>
 				<div class="element third">
-					<label>Ville : </label>
-					<input type="text" class="adresse" placeholder="Veuillez indiquer votre ville">
+					<label>CPP : </label>
+					<input type="text" class="adresse" placeholder="Veuillez indiquer votre CPP">
 				</div>
-				<div class="element sentence">
-					<small class="info">Toutes nos commandes sont livrées à domicile </small>
+				<div class="security">
+					<img src="images/payment-security.png" alt="payment-security">
 				</div>
 				<div class="element okay">
-					<button class="confirmer" type="submit">Continuer</button>
+					<button class="confirmer" type="submit">Finaliser</button>
 				</div>
 			</form>
 		</div>

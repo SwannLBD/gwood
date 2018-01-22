@@ -338,7 +338,6 @@ HEADER
 }
 
 .block-header .nav a:hover {
-
 	text-decoration: underline;
 }
 
@@ -376,7 +375,7 @@ HEADER
 }
 
 .form-connexion .btn-connect:hover {
-	border-bottom: solid .1rem #47360b;
+	text-decoration: underline;
 }
 
 /*****************************************************************************************
@@ -452,6 +451,7 @@ PANIER
 .container-panier .inner-panier {
 	margin: 5% auto;
 	background: rgba(253, 254, 240, 0.7);
+	width: 40%;
 }
 
 .container-panier .inner-panier .list-panier li {
@@ -639,6 +639,27 @@ ADRESSE
 .container-adresse .inner-adresse {
 	margin: 5% auto;
 	background: rgba(253, 254, 240, 0.7);
+	display: flex;
+	width: 40%;
+	height: 27rem;
+}
+
+.container-adresse .inner-adresse .element {
+	margin: auto;
+	padding: 1rem 10rem 1rem 1rem;
+	display: flex;
+}
+
+.container-adresse .inner-adresse form {
+	margin: auto;
+}
+
+.container-adresse .inner-adresse label {
+	text-transform: uppercase;
+	color: #47360b;
+	font-size: 1.4rem;
+	display: flex;
+	width: 10rem;
 }
 
 .container-adresse .inner-adresse input {
@@ -648,9 +669,98 @@ ADRESSE
 	border-right: solid .1rem #47360b;
 	background: none;
 	color: #47360b;
+	width: 29rem;
 }
 
-.container-adresse .inner-adresse label {
+.container-adresse .inner-adresse small {
+	text-transform: uppercase;
+	color: #47360B;
+	font-size: 1rem;
+}
+
+.container-adresse .inner-adresse .confirmer {
+	border: none;
+	background: none;
 	text-transform: uppercase;
 	color: #47360b;
+	padding: 0 .5rem;
+	font-size: 1.7rem;
+	margin: auto;
+	margin-right: 0;
+}
+
+.container-adresse .inner-adresse .confirmer:hover {
+	text-decoration: underline;
+}
+
+/*****************************************************************************************
+PAIEMENT
+*****************************************************************************************/
+
+.container-paye {
+	background: url('../images/background/fond recap.jpg') no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	display: flex;
+}
+
+.container-paye .inner-paye {
+	margin: 5% auto;
+	background: rgba(253, 254, 240, 0.7);
+	display: flex;
+	width: 40%;
+	height: 27rem;
+}
+
+.container-paye .inner-paye .element {
+	margin: auto;
+	padding: 1rem 10rem 1rem 1rem;
+	display: flex;
+}
+
+.container-paye .inner-paye form {
+	margin: auto;
+}
+
+.container-paye .inner-paye label {
+	text-transform: uppercase;
+	color: #47360b;
+	font-size: 1.4rem;
+	display: flex;
+	width: 14rem;
+}
+
+.container-paye .inner-paye input {
+	border-top: none;
+	border-left: none;
+	border-bottom: solid .1rem #47360b;
+	border-right: solid .1rem #47360b;
+	background: none;
+	color: #47360b;
+	width: 29rem;
+}
+
+.container-paye .inner-paye small {
+	text-transform: uppercase;
+	color: #47360B;
+	font-size: 1rem;
+}
+
+.container-paye .inner-paye .confirmer {
+	border: none;
+	background: none;
+	text-transform: uppercase;
+	color: #47360b;
+	padding: 0 .5rem;
+	font-size: 1.7rem;
+	margin: auto;
+	margin-right: 0;
+}
+
+.container-paye .inner-paye .confirmer:hover {
+	text-decoration: underline;
+}
+
+.container-paye .inner-paye .security {
+	margin: 0 auto;
 }
