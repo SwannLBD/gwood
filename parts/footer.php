@@ -6,24 +6,72 @@
 		<div class="social">
 			<ul class="liste">
 				<li class="pinterest">
-					<a>
-						<img src="images/pinterest.png">
-					</a>
+					<div class="box">
+						<a class="button" href="#popup1">
+							<img src="images/pinterest.png" class="logo_social_network">	
+						</a>
+					</div>
+
+					<div id="popup1" class="overlay">
+						<div class="popup">
+							<h2>Hey ! </h2>
+							<a class="close" href="#">&times;</a>
+							<div class="content">
+							Retrouvez nous sur Pinterest -> ProGWood.
+							</div>
+						</div>
+					</div>
 				</li>
 				<li class="twitter">
-					<a>
-						<img src="images/twitter.png">
-					</a>
+					<div class="box">
+						<a class="button" href="#popup2">
+							<img src="images/twitter.png" class="logo_social_network">	
+						</a>
+					</div>
+
+					<div id="popup2" class="overlay">
+						<div class="popup">
+							<h2>Hey ! </h2>
+							<a class="close" href="#">&times;</a>
+							<div class="content">
+							Retrouvez nous sur Twitter, -> @ProGWood.
+							</div>
+						</div>
+					</div>
 				</li>
 				<li class="instagram">
-					<a>	
-						<img src="images/instagram.png">
-					</a>
+					<div class="box">
+						<a class="button" href="#popup3">
+							<img src="images/instagram.png" class="logo_social_network">	
+						</a>
+					</div>
+
+					<div id="popup3" class="overlay">
+						<div class="popup">
+							<h2>Hey ! </h2>
+							<a class="close" href="#">&times;</a>
+							<div class="content">
+							Retrouvez nous sur Instagram, -> ProGWood.
+							</div>
+						</div>
+					</div>
 				</li>
 				<li class="facebook">
-					<a>
-						<img src="images/facebook.png">
-					</a>
+					<div class="box">
+						<a class="button" href="#popup4">
+							<img src="images/facebook.png" class="logo_social_network">	
+						</a>
+					</div>
+
+					<div id="popup4" class="overlay">
+						<div class="popup">
+							<h2>Hey ! </h2>
+							<a class="close" href="#">&times;</a>
+							<div class="content">
+							Retrouvez nous sur Facebook, -> ProGWood.
+							</div>
+						</div>
+					</div>
 				</li>
 			</ul>
 		</div>

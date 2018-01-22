@@ -15,6 +15,7 @@
 			<input type="text" class="mail" placeholder="Email">			
 			<input type="password" class="mdp" placeholder="Mot de passe">
 			<button type="submit" class="btn-connect">Connexion </button>
+			<a class="btn-connect-1" href="settings.php">S'inscrire !</a>
 		</form>
 				
 	</div>

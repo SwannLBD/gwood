@@ -10,11 +10,13 @@
 	
 	// On récupère les POST pour en faire des variables
 	
-	$prenom = $_POST['firstname'];
-	$nom = $_POST['lastname'];
-	$pseudo = $_POST['pseuo'];
-	$mail = $_POST['email'];
-	$password = $_POST['password'];
+	$nomUser = $_POST['lastname'];
+	$prenomUser = $_POST['firstname'];
+	$pseudoUser = $_POST['pseudo'];
+	$mailUser = $_POST['mail'];
+	$mdpUser = $_POST['mdp'];
+	$dateUser = $_POST['date'];
+	$avatarUser = $_POST['skins'];
 	
 	// connection au serveur 
 	
@@ -31,17 +33,18 @@ if (!$link) { // Si le lien entre la connexion et la base de donnée, un afficha
 echo "Host information: " . mysqli_get_host_info($link) . PHP_EOL;
 echo"</p>";*/
 	
-$sql2 = "INSERT INTO User (nomUser, prenomUser, pseudoUser, mailUser, mdpUser) 
-VALUES ('" .$nom ."', '" .$prenom ."', '" .$pseudo ."','" .$mail ."', '" .$password ."')"; /* On lie la base de donnée avec les variables pour récupérer les valeurs et ainsi créer la base de donnée */
+$sql = "INSERT INTO User (nomUser, prenomUser, pseudoUser, mailUser, mdpUser) 
+VALUES ('" .$nomUser ."', '" .$prenomUser ."', '" .$pseudoUser ."', '" .$mailUser ."', '" .$mdpUser ."')"; /* On lie la base de donnée avec les variables pour récupérer les valeurs et ainsi créer la base de donnée */
 	
 /*echo ('Query SQL = ' . $sql2);*/ 
 	
-if (mysqli_query($link, $sql2)) {
+if (mysqli_query($link, $sql)) {
 	 header ('Location: home.php'); // Si l'inscription à bien été faite, on redirige vers la page commencerformulaire
 }else {
 	echo "Error: " . $sql2 . "<br>" . mysqli_error($link); // Si il y a des erreurs, la page affiche un message d'erreur 
 	// A compléter pour afficher si il y a des oublis ou des erreurs
 }
+	
 	?>
 </body>
 </html>
