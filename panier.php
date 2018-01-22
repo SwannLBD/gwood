@@ -43,7 +43,7 @@
 				</div>
 			</div>
 			<div class="command-button">
-				<a href="#" class="commander">
+				<a href="paiement.php" class="commander">
 					<p>Commander</p>
 				</a>
 			</div>
