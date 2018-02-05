@@ -955,3 +955,28 @@ PERSONNALISER
 	margin: auto;
 	margin-left: 0;
 }
+
+/*****************************************************************************************
+PAIEMENT
+*****************************************************************************************/
+
+.container-paiement {
+	background: url('../images/background/paiement fond.jpg') no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	display: flex;
+}
+
+.container-paiement .interrog {
+	width : 2rem;
+	margin: auto 1rem;;
+}
+
+.container-paiement .interrog:hover {
+	width: 2.2rem;
+}
+
+.container-paiement .second input{
+	width: 90%;
+}
+
