@@ -66,7 +66,7 @@
 			echo "<pre>";
 			echo "<p>".$alerteObj->messageAlerte. "</p>";
 			echo "</pre>";
-		} */ 
+		} */
 
 		//pour ajouter une ligne
 		/*$queryAjout = "INSERT INTO alerte(idAlerte, numeroAlerte, messageAlerte) VALUES(:id, '9', 'Facultatif 2')"; //on peut ajouter un WHERE pour etre plus precis

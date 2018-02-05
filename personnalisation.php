@@ -8,14 +8,14 @@
 	<link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="vendors/jquery/jquery.min.js"></script>
-	<script src="personnalisationjs.js"></script>
+	<script src="script.js"></script>
 
 
 </head>
 
 <body>
 <?php include 'parts/header.php' ?>
-	
+
 	<div class="block-center1">
 		<div class="container">
 			<div class="box">
@@ -25,7 +25,7 @@
 				<div class="box_photo">
 					<div class="mini_box mini_box_1">
 						<div class="texte_box" href="#">
-							<p class="texte" href="#" >Accoustique</p>
+							<p class="texte" href="#" >Acoustique</p>
 						</div>
 					</div>
 					<div class="mini_box mini_box_2" href="#">
@@ -35,16 +35,16 @@
 					</div>
 					<div class="mini_box mini_box_3" href="#">
 						<div class="texte_box">
-							<p class="texte" href="#" >Basse</p>	
+							<p class="texte" href="#" >Basse</p>
 						</div>
 					</div>
 				</div>
-			</div>	
+			</div>
 		</div>
 	</div>
 
 <?php include 'parts/footer.php' ?>
-	
+
 	<script src="vendors/Bootstrap/Bootstrap-Design/vendors/jquery/jquery.min.js"></script>
 	<script src="vendors/Bootstrap/Bootstrap-Design/vendors/popper/popper.min.js"></script>
 	<script src="vendors/Bootstrap/Bootstrap-Design/vendors/bootstrap/js/bootstrap.min.js"></script>

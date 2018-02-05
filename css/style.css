@@ -24,7 +24,7 @@ body{
 }
 
 .block-center .carousel-control-next-icon{
-	
+
 }
 
 .block-center .suite_page{
@@ -95,7 +95,7 @@ body{
 .block-center .liste_picto{
 	list-style: none;
 	display: flex;
-		
+
 }
 
 .block-center .fabrication{
@@ -184,7 +184,7 @@ body{
 .block-footer .inner .social .liste{
 	display: flex;
 	margin: auto;
-	
+
 }
 
 .block-footer .inner .mentions {
@@ -279,7 +279,7 @@ body{
 	transform: rotate(320deg);
 }
 
-/*__________________________SETTINGS______________________________________*/
+/*__________________________SIGNIN______________________________________*/
 
 
 /*--------------------------------------------------------------------
@@ -289,9 +289,10 @@ body{
 .block_center2{
 	height: 80vh;
 	display: flex;
+	font-size: 25px;
 }
 
-.btn.btn-primary {
+.submit_inscritpion {
 	background: #47360b;
     color: #fefdf0;
     border: #fefdf0;
@@ -301,7 +302,6 @@ body{
 .block_center2 .button{
 	text-align: right;
 }
-
 
 .block_center2 .container{
 	width: 60%;
@@ -357,7 +357,7 @@ HEADER
 	margin-right: 3rem;
 }
 
-.form-connexion input, 
+.form-connexion input,
 .form-connexion .btn-connect {
 	margin: 0 .6rem;
 }
@@ -376,7 +376,7 @@ HEADER
 	text-transform: uppercase;
 	padding: 0 .5rem;
 	font-size: 1.4rem;
-	
+
 }
 
 .form-connexion .btn-connect:hover {
@@ -474,7 +474,7 @@ PANIER
 }
 
 .container-panier .inner-panier .scroll {
-	min-height: 20rem;	
+	min-height: 20rem;
 }
 
 .container-panier .inner-panier .list-panier img {
@@ -488,7 +488,7 @@ PANIER
 	flex-direction: column;
 }
 
-.container-panier .inner-panier .list-panier h4, 
+.container-panier .inner-panier .list-panier h4,
 .container-panier .inner-panier .list-panier h5  {
 	text-transform: uppercase;
 	color: #47360b;
@@ -603,7 +603,7 @@ LISTE
 }
 
 .list-inner .choix .text h3,
-.list-inner .choix .text p, 
+.list-inner .choix .text p,
 .choix .text .prix {
 	margin: auto;
 }
@@ -707,7 +707,7 @@ ADRESSE
 	text-decoration: underline;
 }
 /*****************************************************************************************
-POP UP réseaux sociaux 
+POP UP réseaux sociaux
 *****************************************************************************************/
 
 .social .box {
@@ -924,7 +924,7 @@ PAIEMENT
 }
 
 .container_detail .choix_etoile img:hover {
-	background: url(../images/etoilejaune.png) 
+	background: url(../images/etoilejaune.png)
 }
 /*****************************************************************************************
 PERSONNALISER
@@ -982,4 +982,3 @@ PAIEMENT
 .container-paiement .second input{
 	width: 90%;
 }
-

@@ -1,70 +1,62 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>phpsettings</title>
-</head>
+<?php
 
-<body>
-	<?php
-
-	$nomUser = $_POST['lastname'];
-	$prenomUser = $_POST['firstname'];
-	$pseudoUser = $_POST['pseudo'];
-	$mailUser = $_POST['mail'];
-	$mdpUser = $_POST['mdp'];
-
-$stmt= $connexion->prepare('INSERT INTO User (nomUser, prenomUser, pseudoUser, mailUser, mdpUser)
-VALUES (:lastname,:firstname, :Pseudo, :mail, :mdp)');
-
-$stmt->bindValue(':lastname','LAMBARD');
-$stmt->bindValue(':firstname','Swann');
-$stmt->bindValue(':Pseudo','SwannLBD');
-$stmt->bindValue(':mail','lambard.swann@icloud.com');
-$stmt->bindValue(':mdp','MDSconnect');
-$stmt->execute();
+	/*CONNEXION*/
+require 'pdo/include/pdo.php';
 
 
-/*Autre methode pour inscription a la base de données !*/
 
-	/*
-	// On récupère les POST pour en faire des variables
+//On initialise des erreurs
+$errors = [];
 
-	$nomUser = $_POST['lastname'];
-	$prenomUser = $_POST['firstname'];
-	$pseudoUser = $_POST['pseudo'];
-	$mailUser = $_POST['mail'];
-	$mdpUser = $_POST['mdp'];
-	$dateUser = $_POST['date'];
-	$avatarUser = $_POST['skins'];
-
-	// connection au serveur
-
-	$link = mysqli_connect("localhost", "root", "root", "gwood");
-
-if (!$link) { // Si le lien entre la connexion et la base de donnée, un affichage des erreurs apparait
-    echo "Error: Unable to connect to MySQL." . PHP_EOL;
-    echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
-    echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
-    exit;
-}
-*/
-/* echo "Success: A proper connection to MySQL was made! The my_db database is great." . PHP_EOL;
-echo "Host information: " . mysqli_get_host_info($link) . PHP_EOL;
-echo"</p>";*/
-/*
-$sql = "INSERT INTO User (nomUser, prenomUser, pseudoUser, mailUser, mdpUser)
-VALUES ('" .$nomUser ."', '" .$prenomUser ."', '" .$pseudoUser ."', '" .$mailUser ."', '" .$mdpUser ."')"; /* On lie la base de donnée avec les variables pour récupérer les valeurs et ainsi créer la base de donnée */
-
-/*echo ('Query SQL = ' . $sql2);*/
-/*
-if (mysqli_query($link, $sql)) {
-	 header ('Location: home.php'); // Si l'inscription à bien été faite, on redirige vers la page commencerformulaire
-}else {
-	echo "Error: " . $sql2 . "<br>" . mysqli_error($link); // Si il y a des erreurs, la page affiche un message d'erreur
-	// A compléter pour afficher si il y a des oublis ou des erreurs
+/*CONDITIONS*/
+//Si le nomUser est vide
+if(empty($_POST['nomUser'])) {
+    $errors['nomUser'] = "votre nom n'est pas valide (Alphanumérique)";
 }
 
-	?>
-</body>
-</html>  */
+//Si le prenomUser est vide
+if(empty($_POST['prenomUser'])) {
+    $errors['prenomUser'] = "votre prénom n'est pas valide (Alphanumérique)";
+}
+
+//Si le pseudo est vide
+if(empty($_POST['pseudoUser'])) {
+    $errors['pseudoUser'] = "votre pseudo n'est pas valide (Alphanumérique)";
+}
+
+//Si l'adresse mail est vide
+if(empty($_POST['mailUser'])) {
+    $errors['mailUser'] = "Votre email n'est pas valide";
+}
+//Si le mot de passe est vide ou différent l'un l'autre
+if(empty($_POST['mdpUser']) || $_POST['mdpUser'] != $_POST['repeatmdpUser']){
+    $errors['mdpUser'] = "Vous devez rentrer un mot de passe valide";
+}
+
+
+
+//Si aucune erreur n'et detecté
+if(empty($errors)){
+
+	$stmt = $connexion->prepare('INSERT INTO User(nomUser, prenomUser, pseudoUser, mailUser, mdpUser)
+	VALUES (:nomUser, :prenomUser, :pseudoUser, :mailUser, :mdpUser )');
+	$stmt->bindValue(':nomUser', $_POST['nomUser']);
+	$stmt->bindValue(':prenomUser', $_POST['prenomUser']);
+	$stmt->bindValue(':pseudoUser', $_POST['pseudoUser']);
+	$stmt->bindValue(':mailUser', $_POST['mailUser']);
+	$stmt->bindValue(':mdpUser', $_POST['mdpUser']);
+	$stmt->execute();
+
+	header('Location: home.php');
+
+}
+//Si au moins une erreurs est detecté ont affiche les erreurs
+else{
+
+    echo "<pre>";
+    print_r($errors);
+    echo "</pre>";
+}
+
+
+?>

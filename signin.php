@@ -14,44 +14,32 @@
 	<?php include 'parts/header.php' ?>
 		<div class="block_center2">
 			<div class="container">
-				<form action="signinphp.php" method="post">
-					<div class="form-group">
-   						<label for="exampleInputName">Nom</label>
-    					<input type="Name" class="form-control" id="exampleInputName" aria-describedby="NameHelp" placeholder="Votre adresse nom">
-    					<small id="lastname" class="form-text text-muted">Modifier votre nom</small>
-  					</div>
-  					<div class="form-group">
-   						<label for="exampleInputFirstname">Prénom</label>
-    					<input type="firstname" class="form-control" id="exampleInputfirstname" aria-describedby="firstnameHelp" placeholder="Votre prénom">
-    					<small id="firstname" class="form-text text-muted">Modifier votre prénom</small>
-  					</div>
-  					<div class="form-group">
-   						<label for="exampleInputnickname">Pseudo</label>
-    					<input type="nickname" class="form-control" id="exampleInputNickname" aria-describedby="nicknameHelp" placeholder="Votre pseudo">
-    					<small id="pseudo" class="form-text text-muted">Modifier votre pseudo</small>
-  					</div>
- 					<div class="form-group">
-   						<label for="exampleInputEmail1">Email</label>
-    					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Votre adresse email">
-    					<small id="mail" class="form-text text-muted">Modifier votre adresse email</small>
-  					</div>
-  					<div class="form-group">
-    					<label for="exampleInputPassword1">Mot de passe</label>
-    					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Votre de mot de passe">
-    					<small id="mdp" class="form-text text-muted">Modifier votre mot de passe</small>
-  					</div>
-						<div class="form-group">
-    					<label for="exampleInputPassword1">Mot de passe</label>
-    					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Votre de mot de passe">
-    					<small id="mdp" class="form-text text-muted">Ré-écrivez votre mot de passe</small>
-  					</div>
-  					<div class="button">
-  						<button type="submit" class="btn btn-primary" href="#">Enregistrer les modifications</button>
-  					</div>
+				<h1>Inscription</h1><hr>
+					<form method="post" action="signinphp.php">
+						<label for="nomUser">Rentrer votre nom : </label>
+						<input type="text" name="nomUser"><br/>
+						<label for="prenomUser">Rentrer votre prénom : </label>
+						<input type="text" name="prenomUser"><br/>
+						<label for="pseudoUser">Rentrer votre pseudo : </label>
+						<input type="text" name="pseudoUser"><br/>
+						<label for="mailUser">Rentrer votre email : </label>
+						<input type="text" name="mailUser"><br/>
+						<label for="mdpUser">Taper mot de passe : </label>
+						<input type="password" name="mdpUser"><br/>
+						<label for="repeatpassword">Retaper votre mot de passe :</label>
+						<input type="password" name="repeatmdpUser"><br/>
+						<input type="submit" name="valider" value="inscription" class="submit_inscritpion">
 				</form>
 				<div class="button_form">
+				</div>	
+					
+					
+					
+					
+				
+	
 
-				</div>
+				
 			</div>
 		</div>
 
