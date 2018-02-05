@@ -7,6 +7,8 @@
 
 	<link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="vendors/jquery/jquery.min.js"></script>
+	<script src="personnalisationjs.js"></script>
 
 
 </head>

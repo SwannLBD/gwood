@@ -6,6 +6,10 @@
 
 	<link rel="stylesheet" href="vendors/Bootstrap/Bootstrap-Design/vendors/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/G.photosjs.js"></script>
+	
+	
 
 </head>
 
@@ -41,7 +45,7 @@
 									</li>
 									<li class="item-photo share share-1">
 										<a href="#" alt="full screen">
-											<img src="images/logos/expand.png">
+											<img id="agrandir" src="images/logos/expand.png">
 										</a> 
 									</li>
 									</ul>

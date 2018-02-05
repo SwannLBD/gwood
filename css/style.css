@@ -252,7 +252,9 @@ body{
 	background-size: auto 100%;
 }
 
-.block-center1 .texte_box:hover{
+/* Effectuer en JS !! */
+
+/*.block-center1 .texte_box:hover{
 	background-size: auto 110%;
 }
 
@@ -262,7 +264,8 @@ body{
 
 .block-center1 .mini_box_3 .texte_box:hover{
 	background-size: auto 110%;
-}
+}*/
+
 
 .block-center1 .mini_box{
 	width:calc(100%/3);
