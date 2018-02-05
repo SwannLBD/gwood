@@ -1,5 +1,7 @@
 $(function () {	
 	
+/***********************************PAIEMENT**************************************/
+	
 	$('.cpp').click(function(e){
 		console.log('ça marche !'); // pour la vérification
 		e.preventDefault(); //pas de lien pour le a, l'event ne fonctionne pas normalement
@@ -10,6 +12,8 @@ $(function () {
 			$('.interrog').attr('src', 'images/logos/icon.png'); //changer la source
 		}
 	});
+	
+	
 	
 	
 });

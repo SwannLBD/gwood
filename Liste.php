@@ -11,8 +11,59 @@
 
 <body>
 
-	<?php include('parts/header.php') ?>
+	<?php include('parts/header.php') ?>	
+	<?php include('gest-list.php') ?>
+	<?php
+
+	require('connectToDatabase.php');
+
+
+
+
+//Accoustique 1 DANS LA TABLE INSTRUMENT
+	$query = "SELECT * FROM instrument WHERE refInstr='A01'";
+		$stmt = $connexion->prepare($query);
+		$stmt -> execute();
+
+		while($acou1 = $stmt -> fetch()) { 
 	
+//Accoustique 2 DANS LA TABLE INSTRUMENT
+		$query = "SELECT * FROM instrument WHERE refInstr='A02'";
+		$stmt = $connexion->prepare($query);
+		$stmt -> execute();
+
+		while($acou2 = $stmt -> fetch()) { 
+		
+//Electrique 1 DANS LA TABLE INSTRUMENT
+		$query = "SELECT * FROM instrument WHERE refInstr='E01'";
+		$stmt = $connexion->prepare($query);
+		$stmt -> execute();
+
+		while($elec1 = $stmt -> fetch()) { 	
+			
+//Electrique 2 DANS LA TABLE INSTRUMENT
+		$query = "SELECT * FROM instrument WHERE refInstr='E02'";
+		$stmt = $connexion->prepare($query);
+		$stmt -> execute();
+
+		while($elec2 = $stmt -> fetch()) { 
+
+//Basse 1 DANS LA TABLE INSTRUMENT
+		$query = "SELECT * FROM instrument WHERE refInstr='B01'";
+		$stmt = $connexion->prepare($query);
+		$stmt -> execute();
+
+		while($basse1 = $stmt -> fetch()) { 
+			
+//Basse 2 DANS LA TABLE INSTRUMENT
+		$query = "SELECT * FROM instrument WHERE refInstr='B02'";
+		$stmt = $connexion->prepare($query);
+		$stmt -> execute();
+
+		while($basse2 = $stmt -> fetch()) { 
+	
+	?>
+
 	<div class="list-container">
 		<div class="list-inner">
 			<div class="row">
@@ -24,11 +75,11 @@
 					</div> 
 					<div class="text">
 						<a href="#">
-							<h3>Guitare accoustique 1</h3>
-							<p>Référence : 54FR98TOP7</p>
+							<h3><?php echo $acou1 -> typeInstr ?> 1</h3>
+							<p>Référence : <?php echo $acou1 -> refInstr ?></p>
 						</a>
 						<div class="prix prix-1">
-							<p>195€</p>
+							<p><?php echo SUBSTR($acou1 -> prixInstr ,0,3) ?> €</p>
 						</div>
 					</div>	
 				</div>
@@ -40,11 +91,11 @@
 					</div> 
 					<div class="text">
 						<a href="#">
-							<h3>Guitare accoustique 2</h3>
-							<p>Référence : 89FR98TOP7</p>
+							<h3><?php echo $acou2 -> typeInstr ?> 2</h3>
+							<p>Référence : <?php echo $acou2 -> refInstr ?></p>
 						</a>
 						<div class="prix prix-1">
-							<p>180€</p>
+							<p><?php echo SUBSTR($acou2 -> prixInstr ,0,3)?> €</p>
 						</div>
 					</div>	
 				</div>
@@ -56,11 +107,11 @@
 					</div> 
 					<div class="text">
 						<a href="#">
-							<h3>Guitare électrique 1</h3>
-							<p>Référence : 54FR98TOP7</p>
+							<h3><?php echo $elec1 -> typeInstr ?> 1</h3>
+							<p>Référence : <?php echo $elec1 -> refInstr ?></p>
 						</a>
 						<div class="prix prix-1">
-							<p>210€</p>
+							<p><?php echo SUBSTR($elec1 -> prixInstr ,0,3) ?> €</p>
 						</div>
 					</div>	
 				</div>
@@ -72,11 +123,11 @@
 					</div> 
 					<div class="text">
 						<a href="#">
-							<h3>Guitare électrique 2</h3>
-							<p>Référence : 54FR98TOP7</p>
+							<h3><?php echo $elec2 -> typeInstr ?> 2</h3>
+							<p>Référence : <?php echo $elec2 -> refInstr ?></p>
 						</a>
 						<div class="prix prix-1">
-							<p>225€</p>
+							<p><?php echo SUBSTR ($elec2 -> prixInstr ,0,3) ?>€</p>
 						</div>
 					</div>	
 				</div>
@@ -88,11 +139,11 @@
 					</div> 
 					<div class="text">
 						<a href="#">
-							<h3>Guitare bass 1</h3>
-							<p>Référence : 54FR98TOP7</p>
+							<h3><?php echo $basse1 -> typeInstr ?> 1</h3>
+							<p>Référence : <?php echo $basse1 -> refInstr ?></p>
 						</a>
 						<div class="prix prix-1">
-							<p>250€</p>
+							<p><?php echo SUBSTR($basse1 -> prixInstr ,0,3) ?> €</p>
 						</div>
 					</div>	
 				</div>
@@ -104,19 +155,31 @@
 					</div> 
 					<div class="text">
 						<a href="#">
-							<h3>Guitare bass 2</h3>
-							<p>Référence : 54FR98TOP7</p>
+							<h3><?php echo $basse2 -> typeInstr ?> 2</h3>
+							<p>Référence : <?php echo $basse2 -> refInstr ?></p>
 						</a>
 						<div class="prix prix-1">
-							<p>240€</p>
+							<p><?php echo SUBSTR($basse2 -> prixInstr ,0,3) ?> €</p>
 						</div>
 					</div>	
 				</div>
 			</div>
 		</div>	
 	</div>
+	<?php
+		}
 	
-	<?php include('parts/footer.php') ?>
+		}
+	
+		}
+	
+		}
+
+		}
+	
+		}
+	
+	include('parts/footer.php') ?>
 	
 	<script src="vendors/Bootstrap/Bootstrap-Design/vendors/jquery/jquery.min.js"></script>
 	<script src="vendors/Bootstrap/Bootstrap-Design/vendors/popper/popper.min.js"></script>
