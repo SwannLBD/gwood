@@ -1,6 +1,7 @@
-$(function () {
-
-	//************************PAIEMENT**************************
+$(function () {	
+	
+/***********************************PAIEMENT**************************************/
+	
 
 	$('.cpp').click(function(e){
 		console.log('ça marche !'); // pour la vérification
@@ -12,6 +13,7 @@ $(function () {
 			$('.interrog').attr('src', 'images/logos/icon.png'); //changer la source
 		}
 	});
+
 
 	//************************PERSONNALISATION**************************
 
@@ -61,3 +63,4 @@ $(function () {
 
 
 });
+
