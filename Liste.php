@@ -12,7 +12,9 @@
 <body>
 
 	<?php include('parts/header.php') ?>	
-	<?php include('gest-list.php') ?>
+	
+	
+	
 	<?php
 
 	require('connectToDatabase.php');
@@ -63,6 +65,7 @@
 		while($basse2 = $stmt -> fetch()) { 
 	
 	?>
+	
 
 	<div class="list-container">
 		<div class="list-inner">
@@ -70,7 +73,7 @@
 				<div class="choix choix-1 col-5 offset-1">
 					<div class="image-choix">
 						<a href="#">
-							<img src="images/externeSwann/3810120821_frt_wlg_001.png" alt="Guitare accoustique 1">
+							<img src= <?php echo $acou1 -> imgInstr ?> alt="Guitare accoustique 1">
 						</a>
 					</div> 
 					<div class="text">
@@ -86,7 +89,7 @@
 				<div class="choix choix-2 col-5">
 					<div class="image-choix">
 						<a href="#">
-							<img src="images/externeSwann/guitar_PNG3363.png" alt="Guitare accoustique 2">
+							<img src= <?php echo $acou2 -> imgInstr ?> alt="Guitare accoustique 2">
 						</a>
 					</div> 
 					<div class="text">
@@ -102,7 +105,7 @@
 				<div class="choix choix-1 col-5 offset-1">
 					<div class="image-choix">
 						<a href="#">
-							<img src="images/externeSwann/1475474.png" alt="Guitare accoustique 1">
+							<img src= <?php echo $elec1 -> imgInstr ?> alt="Guitare accoustique 1">
 						</a>
 					</div> 
 					<div class="text">
@@ -118,7 +121,7 @@
 				<div class="choix choix-2 col-5">
 					<div class="image-choix">
 						<a href="#">
-							<img src="images/externeSwann/straight1.png" alt="Guitare accoustique 1">
+							<img src= <?php echo $elec2 -> imgInstr ?> alt="Guitare accoustique 1">
 						</a>
 					</div> 
 					<div class="text">
@@ -134,7 +137,7 @@
 				<div class="choix choix-1 col-5 offset-1">
 					<div class="image-choix">
 						<a href="#">
-							<img src="images/externeSwann/6-2-bass-guitar-transparent.png" alt="Guitare accoustique 1">
+							<img src= <?php echo $basse1 -> imgInstr ?> alt="Guitare accoustique 1">
 						</a>
 					</div> 
 					<div class="text">
@@ -150,7 +153,7 @@
 				<div class="choix choix-2 col-5">
 					<div class="image-choix">
 						<a href="#">
-							<img src="images/externeSwann/9a0bb37dda2751590b86abdbcf969ea9.png" alt="Guitare accoustique 1">
+							<img src= <?php echo $basse2 -> imgInstr ?> alt="Guitare accoustique 1">
 						</a>
 					</div> 
 					<div class="text">
@@ -179,7 +182,9 @@
 	
 		}
 	
-	include('parts/footer.php') ?>
+	include('parts/footer.php') 
+		
+	?>
 	
 	<script src="vendors/Bootstrap/Bootstrap-Design/vendors/jquery/jquery.min.js"></script>
 	<script src="vendors/Bootstrap/Bootstrap-Design/vendors/popper/popper.min.js"></script>

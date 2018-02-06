@@ -899,33 +899,7 @@ PAIEMENT
 	background-color: #fefdf0;
 }
 
-/*__________________________Details produit_______________________________*/
 
-
-/*--------------------------------------------------------------------
-							BODY
---------------------------------------------------------------------*/
-
-.container_detail {
-	background: url(../images/externeSwann/wood-_texture3177.jpg);
-	display: flex;
-}
-
-.photo_ens {
-	background: #fefdf0;
-	opacity: .75;
-	display: flex;
-}
-
-.photo_ens .photo {
-	display: flex;
-	margin: auto;
-	padding: 30px;
-}
-
-.container_detail .choix_etoile img:hover {
-	background: url(../images/etoilejaune.png)
-}
 /*****************************************************************************************
 PERSONNALISER
 *****************************************************************************************/
@@ -982,3 +956,19 @@ PAIEMENT
 .container-paiement .second input{
 	width: 90%;
 }
+
+
+/*--------------------------------------------------------------------
+							DETAIL PRODUIT 
+--------------------------------------------------------------------*/
+
+
+.container_detail {
+	background : #fefdf0;
+}
+
+.container_detail .total_page .photo_ens img{
+	width: 15%;
+	height: 15%;
+}
+

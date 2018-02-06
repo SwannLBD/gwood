@@ -12,6 +12,7 @@
 <body>
 	<?php include('parts/header.php') ?>
 	
+	
 	<div class="container_detail">
 		<div class="total_page">
 			<div class="photo_ens">
