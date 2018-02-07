@@ -3,16 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <title>detail_produit</title>
-	
+
+
 	<link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
-	
+
+
+
 </head>
 
 <body>
 	<?php include('parts/header.php') ?>
-	
-	
+
+
 	<div class="container_detail">
 		<div class="total_page">
 			<div class="photo_ens">
@@ -40,14 +43,22 @@
 				<img src="" alt="">
 			</div>
 			<div class="avis">
-				<div class="choix_etoile">
-					<h1>Laisser votre avis :</h1>
-					<img src="images/star.png" alt="etoile">
-					<img src="images/star.png" alt="etoile">
-					<img src="images/star.png" alt="etoile">
-					<img src="images/star.png" alt="etoile">
-					<img src="images/star.png" alt="etoile">
-				</div>
+
+
+				<form action="#" method="post">
+				  Votre note<br/>
+				  <input type="hidden" name="note" value="" id="note"/>
+				  <img src="images/star.png" id="clear_stars" title="Sans intérêt c'est trop nul">
+				  <img src="images/star.png" id="star_1" class="star"/>
+				  <img src="images/star.png" id="star_2" class="star"/>
+				  <img src="images/star.png" id="star_3" class="star"/>
+				  <img src="images/star.png" id="star_4" class="star"/>
+				  <img src="images/star.png" id="star_5" class="star"/>
+				  <!-- Ajouter autant d'étoile que nécessaire !-->
+				  <input type="submit" value="Noter" class="bouton"/>
+				</form>
+
+
 				<div class="avis_1">
 					<h2>Julien</h2>
 					<p>Produit de qualité à un prix abordable, je recommande !</p>
@@ -67,14 +78,15 @@
 					<img src="images/etoilejaune.png" alt="etoile">
 				</div>
 			</div>
-			
-			
+
+
 		</div>
 	</div>
-	
+
 	<?php include('parts/footer.php') ?>
 	<script src="vendors/Bootstrap/Bootstrap-Design/vendors/jquery/jquery.min.js"></script>
 	<script src="vendors/Bootstrap/Bootstrap-Design/vendors/popper/popper.min.js"></script>
 	<script src="vendors/Bootstrap/Bootstrap-Design/vendors/bootstrap/js/bootstrap.min.js"></script>
+
 </body>
 </html>
