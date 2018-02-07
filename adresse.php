@@ -13,7 +13,7 @@
 	<?php include('parts/header.php') ?>
 	<div class="container-adresse">
 		<div class="inner-adresse">
-			<form action="#" method="POST">
+			<form action="paiement.php" method="POST">
 				<div class="element first">
 					<label>Adresse : </label>
 					<input type="text" class="adresse" placeholder="Veuillez indiquer votre adresse">
