@@ -5,7 +5,7 @@
 <title>Liste guitare</title>
 
 	<link rel="stylesheet" href="vendors/Bootstrap/Bootstrap-Design/vendors/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css"> 
 
 </head>
 
@@ -70,102 +70,102 @@
 	<div class="list-container">
 		<div class="list-inner">
 			<div class="row">
-				<div class="choix choix-1 col-5 offset-1">
-					<div class="image-choix">
-						<a href="#">
-							<img src= <?php echo $acou1 -> imgInstr ?> alt="Guitare accoustique 1">
-						</a>
-					</div> 
-					<div class="text">
-						<a href="#">
-							<h3><?php echo $acou1 -> typeInstr ?> 1</h3>
-							<p>Référence : <?php echo $acou1 -> refInstr ?></p>
-						</a>
-						<div class="prix prix-1">
-							<p><?php echo SUBSTR($acou1 -> prixInstr ,0,3) ?> €</p>
-						</div>
-					</div>	
-				</div>
-				<div class="choix choix-2 col-5">
-					<div class="image-choix">
-						<a href="#">
-							<img src= <?php echo $acou2 -> imgInstr ?> alt="Guitare accoustique 2">
-						</a>
-					</div> 
-					<div class="text">
-						<a href="#">
-							<h3><?php echo $acou2 -> typeInstr ?> 2</h3>
-							<p>Référence : <?php echo $acou2 -> refInstr ?></p>
-						</a>
-						<div class="prix prix-1">
-							<p><?php echo SUBSTR($acou2 -> prixInstr ,0,3)?> €</p>
-						</div>
-					</div>	
-				</div>
-				<div class="choix choix-1 col-5 offset-1">
-					<div class="image-choix">
-						<a href="#">
-							<img src= <?php echo $elec1 -> imgInstr ?> alt="Guitare accoustique 1">
-						</a>
-					</div> 
-					<div class="text">
-						<a href="#">
-							<h3><?php echo $elec1 -> typeInstr ?> 1</h3>
-							<p>Référence : <?php echo $elec1 -> refInstr ?></p>
-						</a>
-						<div class="prix prix-1">
-							<p><?php echo SUBSTR($elec1 -> prixInstr ,0,3) ?> €</p>
-						</div>
-					</div>	
-				</div>
-				<div class="choix choix-2 col-5">
-					<div class="image-choix">
-						<a href="#">
-							<img src= <?php echo $elec2 -> imgInstr ?> alt="Guitare accoustique 1">
-						</a>
-					</div> 
-					<div class="text">
-						<a href="#">
-							<h3><?php echo $elec2 -> typeInstr ?> 2</h3>
-							<p>Référence : <?php echo $elec2 -> refInstr ?></p>
-						</a>
-						<div class="prix prix-1">
-							<p><?php echo SUBSTR ($elec2 -> prixInstr ,0,3) ?>€</p>
-						</div>
-					</div>	
-				</div>
-				<div class="choix choix-1 col-5 offset-1">
-					<div class="image-choix">
-						<a href="#">
-							<img src= <?php echo $basse1 -> imgInstr ?> alt="Guitare accoustique 1">
-						</a>
-					</div> 
-					<div class="text">
-						<a href="#">
-							<h3><?php echo $basse1 -> typeInstr ?> 1</h3>
-							<p>Référence : <?php echo $basse1 -> refInstr ?></p>
-						</a>
-						<div class="prix prix-1">
-							<p><?php echo SUBSTR($basse1 -> prixInstr ,0,3) ?> €</p>
-						</div>
-					</div>	
-				</div>
-				<div class="choix choix-2 col-5">
-					<div class="image-choix">
-						<a href="#">
-							<img src= <?php echo $basse2 -> imgInstr ?> alt="Guitare accoustique 1">
-						</a>
-					</div> 
-					<div class="text">
-						<a href="#">
-							<h3><?php echo $basse2 -> typeInstr ?> 2</h3>
-							<p>Référence : <?php echo $basse2 -> refInstr ?></p>
-						</a>
-						<div class="prix prix-1">
-							<p><?php echo SUBSTR($basse2 -> prixInstr ,0,3) ?> €</p>
-						</div>
-					</div>	
-				</div>
+					<div class="choix choix-1 col-5 offset-1">
+						<div class="image-choix">
+							<a href="produit1.php">
+								<img src= <?php echo $acou1 -> imgInstr ?> alt="Guitare accoustique 1">
+							</a>
+						</div> 
+						<div class="text">
+							<a href="produit1.php">
+								<h3><?php echo $acou1 -> typeInstr ?> 1</h3>
+								<p>Référence : <?php echo $acou1 -> refInstr ?></p>
+							</a>
+							<div class="prix prix-1">
+								<p><?php echo SUBSTR($acou1 -> prixInstr ,0,3) ?> €</p>
+							</div>
+						</div>	
+					</div>
+					<div class="choix choix-2 col-5">
+						<div class="image-choix">
+							<a href="produit2.php">
+								<img src= <?php echo $acou2 -> imgInstr ?> alt="Guitare accoustique 2">
+							</a>
+						</div> 
+						<div class="text">
+							<a href="produit2.php">
+								<h3><?php echo $acou2 -> typeInstr ?> 2</h3>
+								<p>Référence : <?php echo $acou2 -> refInstr ?></p>
+							</a>
+							<div class="prix prix-1">
+								<p><?php echo SUBSTR($acou2 -> prixInstr ,0,3)?> €</p>
+							</div>
+						</div>	
+					</div>
+					<div class="choix choix-3 col-5 offset-1">
+						<div class="image-choix">
+							<a href="produit3.php">
+								<img src= <?php echo $elec1 -> imgInstr ?> alt="Guitare accoustique 1">
+							</a>
+						</div> 
+						<div class="text">
+							<a href="produit3.php">
+								<h3><?php echo $elec1 -> typeInstr ?> 1</h3>
+								<p>Référence : <?php echo $elec1 -> refInstr ?></p>
+							</a>
+							<div class="prix prix-1">
+								<p><?php echo SUBSTR($elec1 -> prixInstr ,0,3) ?> €</p>
+							</div>
+						</div>	
+					</div>
+					<div class="choix choix-4 col-5">
+						<div class="image-choix">
+							<a href="produit4.php">
+								<img src= <?php echo $elec2 -> imgInstr ?> alt="Guitare accoustique 1">
+							</a>
+						</div> 
+						<div class="text">
+							<a href="produit4.php">
+								<h3><?php echo $elec2 -> typeInstr ?> 2</h3>
+								<p>Référence : <?php echo $elec2 -> refInstr ?></p>
+							</a>
+							<div class="prix prix-1">
+								<p><?php echo SUBSTR ($elec2 -> prixInstr ,0,3) ?>€</p>
+							</div>
+						</div>	
+					</div>
+					<div class="choix choix-5 col-5 offset-1">
+						<div class="image-choix">
+							<a href="produit5.php">
+								<img src= <?php echo $basse1 -> imgInstr ?> alt="Guitare accoustique 1">
+							</a>
+						</div> 
+						<div class="text">
+							<a href="produit5.php">
+								<h3><?php echo $basse1 -> typeInstr ?> 1</h3>
+								<p>Référence : <?php echo $basse1 -> refInstr ?></p>
+							</a>
+							<div class="prix prix-1">
+								<p><?php echo SUBSTR($basse1 -> prixInstr ,0,3) ?> €</p>
+							</div>
+						</div>	
+					</div>
+					<div class="choix choix-6 col-5">
+						<div class="image-choix">
+							<a href="produit6.php">
+								<img src= <?php echo $basse2 -> imgInstr ?> alt="Guitare accoustique 1">
+							</a>
+						</div> 
+						<div class="text">
+							<a href="produit6.php">
+								<h3><?php echo $basse2 -> typeInstr ?> 2</h3>
+								<p>Référence : <?php echo $basse2 -> refInstr ?></p>
+							</a>
+							<div class="prix prix-1">
+								<p><?php echo SUBSTR($basse2 -> prixInstr ,0,3) ?> €</p>
+							</div>
+						</div>	
+					</div>
 			</div>
 		</div>	
 	</div>
@@ -181,6 +181,7 @@
 		}
 	
 		}
+	
 	
 	include('parts/footer.php') 
 		
