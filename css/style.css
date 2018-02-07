@@ -971,7 +971,11 @@ PAIEMENT
 	background : #fefdf0;
 }
 
-.container_detail .total_page .photo_ens img{
-	width: 15%;
-	height: 15%;
+.container_detail .total_page {
+	
+}
+
+.container_detail .total_page .photo_ens img {
+	width: 10%;
+	height: 10%;
 }
