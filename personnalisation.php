@@ -24,19 +24,25 @@
 				</div>
 				<div class="box_photo">
 					<div class="mini_box mini_box_1">
-						<div class="texte_box" href="#">
-							<p class="texte" href="#" >Acoustique</p>
-						</div>
+						<a href="personnaliser.php" >
+							<div class="texte_box" href="#">
+								<p class="texte" href="#" >Acoustique</p>
+							</div>
+					</a>
 					</div>
-					<div class="mini_box mini_box_2" href="#">
-						<div class="texte_box">
-							<p class="texte" href="#" >Electrique</p>
-						</div>
+					<div class="mini_box mini_box_2">
+						<a href="personnaliser.php" >
+							<div class="texte_box">
+								<p class="texte" href="#" >Electrique</p>
+							</div>
+						</a>
 					</div>
-					<div class="mini_box mini_box_3" href="#">
-						<div class="texte_box">
-							<p class="texte" href="#" >Basse</p>
-						</div>
+					<div class="mini_box mini_box_3">
+						<a href="personnaliser.php" >
+							<div class="texte_box">
+								<p class="texte" href="#" >Basse</p>
+							</div>
+						</a>
 					</div>
 				</div>
 			</div>

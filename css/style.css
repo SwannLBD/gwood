@@ -232,6 +232,10 @@ body{
 	text-align: center;
 }
 
+.box_photo a{
+	text-decoration: none;
+}
+
 .block-center1 .texte_box{
 	background: url(../images/guit1.png);
 	background-size: auto 100%;
@@ -959,7 +963,7 @@ PAIEMENT
 
 
 /*--------------------------------------------------------------------
-							DETAIL PRODUIT 
+							DETAIL PRODUIT
 --------------------------------------------------------------------*/
 
 
@@ -971,4 +975,3 @@ PAIEMENT
 	width: 15%;
 	height: 15%;
 }
-

@@ -1,7 +1,7 @@
-$(function () {	
-	
+$(function () {
+
 /***********************************PAIEMENT**************************************/
-	
+
 
 	$('.cpp').click(function(e){
 		console.log('ça marche !'); // pour la vérification
@@ -13,7 +13,7 @@ $(function () {
 			$('.interrog').attr('src', 'images/logos/icon.png'); //changer la source
 		}
 	});
-	
+
 	//************************PERSONNALISATION**************************
 
 	$('.block-center1 .texte_box').mouseover(function(){ //au passage de la souris, la taille de l'image de fond passe a 110% au lieu de 100%
@@ -59,8 +59,39 @@ $(function () {
 			'border-radius': '1px';
 		});
 	});
+});
 
+//N'est pas approprié pour le code actuel !
 
+function GestionHover(idListe, indice, nbEtoile){
+		for (i=1; i<= nbEtoile; i++)
+		{
+			var idoff = "staroff-" + idListe + "-" + i;
+			var idon = "staron-" + idListe + "-" + i;
 
-});	
-
+			if(indice == -1)
+			{
+				// Sortie du survol de la liste des etoiles
+				if (ArrListeEtoile[idListe] >= i){
+					document.getElementById(idoff).style.display ="none";
+					document.getElementById(idon).style.display ="block";
+				}
+				else{
+					document.getElementById(idoff).style.display ="block";
+					document.getElementById(idon).style.display ="none";
+				}
+			}
+			else
+			{
+				// Survol de la liste des etoiles
+				if(i <= indice){
+					document.getElementById(idoff).style.display ="none";
+					document.getElementById(idon).style.display ="block";
+				}
+				else{
+					document.getElementById(idoff).style.display ="block";
+					document.getElementById(idon).style.display ="none";
+				}
+			}
+		}
+	}
