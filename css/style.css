@@ -340,9 +340,13 @@ HEADER
 	font-size: 1.3rem;
 }
 
+
+
 .block-header .nav a:not(:last-child) {
 	border-right : solid .1rem #47360b;
 }
+
+
 
 .block-header .nav a:hover {
 

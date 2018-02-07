@@ -1,3 +1,4 @@
+
 <header class="block-header">
 	<a href="home.php">
 		<img src="images/logos/logo.png" alt="logo GWood" class="logo">
@@ -25,5 +26,8 @@
 		} */
 ?>
 	</div>
+<script>
+
+</script>
 
 </header>
