@@ -31,15 +31,15 @@
 						<input type="submit" name="valider" value="inscription" class="submit_inscritpion">
 				</form>
 				<div class="button_form">
-				</div>	
-					
-					
-					
-					
-				
-	
+				</div>
 
-				
+
+
+
+
+
+
+
 			</div>
 		</div>
 

@@ -9,19 +9,17 @@
 		<a class="nav-link" href="">ProG Wood</a>
 		<a class="nav-link" href="panier.php">Panier</a>
 	</nav>
-	
+
 	<div class="form-connexion">
 		<form action="connexion.php" method="POST">
-			<input type="text" class="mail" placeholder="Email">			
-			<input type="password" class="mdp" placeholder="Mot de passe">
+			<input type="text" class="mail" placeholder="Email" name="mailUser">
+			<input type="password" class="mdp" placeholder="Mot de passe" name="mdpUser">
 			<button type="submit" class="btn-connect">Connexion </button>
-			<a class="btn-connect-1" href="settings.php">S'inscrire !</a>
+			<a class="btn-connect-1" href="signin.php">S'inscrire !</a>
 		</form>
-				
-	</div>
+<?php
 	
-</header>	
+?>
+	</div>
 
-
-
-
+</header>
