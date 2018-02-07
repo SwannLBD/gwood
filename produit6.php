@@ -52,7 +52,6 @@
 			<img src="images/externeSwann/fabrication-francaise.png" alt="">
 			<div class="ajouter">
 				<p>185€</p>
-				<img src="" alt="">
 			</div>
 			<div class="avis">
 				<div class="choix_etoile">

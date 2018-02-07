@@ -14,8 +14,8 @@ $(function () {
 		}
 	});
 
-	//************************PERSONNALISATION**************************
 
+<<<<<<< HEAD
 	$('.block-center1 .texte_box').mouseover(function(){ //au passage de la souris, la taille de l'image de fond passe a 110% au lieu de 100%
 		$(this).css({
 			'background-size': 'auto 110%',
@@ -59,9 +59,11 @@ $(function () {
 			'border-radius': '1px'
 		});
 	});
+=======
+
+>>>>>>> 19c1a1ffa7dd8fb63a73a142292da3117e381d6e
 
 });
 
 
 
-//N'est pas approprié pour le code actuel !

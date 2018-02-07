@@ -972,10 +972,15 @@ PAIEMENT
 }
 
 .container_detail .total_page {
-	
+	margin: auto;
+	display: flex;
 }
 
 .container_detail .total_page .photo_ens img {
-	width: 10%;
-	height: 10%;
+	width: 100%;
+}
+
+.container_detail .total_page .photo {
+	width: 20vh;
+	height: 10vh;
 }
