@@ -3,19 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <title>detail_produit</title>
-	
+
 	<link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
-	
+
 </head>
 
 <body>
 	<?php include('parts/header.php') ?>
-	
-	
+
+
 	<?php
 
-	require('connectToDatabase.php');
+
+	require('pdo/include/pdo.php');
 
 
 
@@ -26,8 +27,8 @@
 		$stmt -> execute();
 
 		while($acou1 = $stmt -> fetch()) { ?>
-	
-	
+
+
 	<div class="container_detail">
 		<div class="total_page">
 			<div class="photo_ens">
@@ -82,15 +83,15 @@
 					<img src="images/etoilejaune.png" alt="etoile">
 				</div>
 			</div>
-			
-			
+
+
 		</div>
 	</div>
-	
+
 	<?php
 	}
 	include('parts/footer.php') ?>
-	
+
 	<script src="vendors/Bootstrap/Bootstrap-Design/vendors/jquery/jquery.min.js"></script>
 	<script src="vendors/Bootstrap/Bootstrap-Design/vendors/popper/popper.min.js"></script>
 	<script src="vendors/Bootstrap/Bootstrap-Design/vendors/bootstrap/js/bootstrap.min.js"></script>

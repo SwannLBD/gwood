@@ -147,6 +147,12 @@ body{
 
 
 
+
+
+
+
+
+
 /*--------------------------------------------------------------------
 							FOOTER
 --------------------------------------------------------------------*/
@@ -967,8 +973,12 @@ PAIEMENT
 --------------------------------------------------------------------*/
 
 
+
+
+
 .container_detail {
 	background : #fefdf0;
+	height: 80vh;
 }
 
 .container_detail .total_page {
@@ -983,4 +993,18 @@ PAIEMENT
 .container_detail .total_page .photo {
 	width: 20vh;
 	height: 10vh;
+}
+
+.column1{
+	display: flex;
+	margin: auto;
+}
+
+.photo_ens{
+	margin: auto;
+}
+
+.ref_prod{
+	margin: auto;
+	text-align: center;
 }

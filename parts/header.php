@@ -18,11 +18,9 @@
 			<a class="btn-connect-1" href="signin.php">S'inscrire !</a>
 		</form>
 <?php
-		/* if (empty($_SESSION["mailUser"]) || empty($_SESSION['mdpUser'])) {
-			echo "<script>alert('veuillez saisir une adresse mail et un mot de passe pour une meilleure navigation')</script>";
-		}else {
-			echo "<script>alert('Connexion valide, authentification réussite !')</script>";
-		} */
+		if(isset($_GET['error_login'] && $_GET['error_login']===1)){
+			echo "Erreur lors de votre connexion";
+		}
 ?>
 	</div>
 

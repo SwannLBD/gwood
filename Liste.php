@@ -5,7 +5,7 @@
 <title>Liste guitare</title>
 
 	<link rel="stylesheet" href="vendors/Bootstrap/Bootstrap-Design/vendors/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -17,7 +17,7 @@
 
 	<?php
 
-	require('connectToDatabase.php');
+	require('pdo/include/pdo.php');
 
 
 
@@ -166,7 +166,7 @@
 						</div>
 					</div>
 				</div>
-					
+
 			</div>
 		</div>
 	</div>
@@ -185,9 +185,9 @@
 
 	include('parts/footer.php')
 
-	
-	
-		
+
+
+
 	?>
 
 	<script src="vendors/Bootstrap/Bootstrap-Design/vendors/jquery/jquery.min.js"></script>

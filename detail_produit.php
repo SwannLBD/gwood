@@ -18,15 +18,17 @@
 
 	<div class="container_detail">
 		<div class="total_page">
-			<div class="photo_ens">
-				 <div class="photo">
-					<img src="images/externeSwann/guitar_PNG3363.png" alt="">
+			<div class="column1">
+				<div class="photo_ens">
+					 <div class="photo">
+						<img src="images/externeSwann/guitar_PNG3363.png" alt="">
+					</div>
 				</div>
-			</div>
-			<div class="ref_prod">
-				<h1>Guitare accoustique</h1>
-				<h2>154DS89TDG986</h2>
-			</div>
+				<div class="ref_prod">
+					<h1>Guitare accoustique</h1>
+					<h2>154DS89TDG986</h2>
+				</div>
+		</div>
 			<div class="desc_prod">
 				<h1>Description</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id elit eget urna convallis pretium quis at neque. Donec feugiat, neque in aliquet blandit, sem urna dictum augue, at egestas.</p>

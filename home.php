@@ -6,7 +6,7 @@
 
 	<link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
-	
+
 
 </head>
 
@@ -132,14 +132,16 @@
 						<p class="avis_depo">Laisser votre avis...</p>
 					</div>
 				</div>
-				
-			</div> 
+
+			</div>
 			<div class="picto">
 				<ul class="liste_picto">
 					<li>
 						<a>
 							<img class="fabrication" src="images/fabrication-francaise.png">
 							<p class="intitule_fab">Fabrication française</p>
+							</div>
+							<a class='button glyphicon glyphicon-plus' href='#'></a>
 						</a>
 					</li>
 					<li>
@@ -149,7 +151,7 @@
 						</a>
 					</li>
 					<li>
-						<a>	
+						<a>
 							<img  class="paiement"	src="images/payment-security.png">
 							<p class="intitule_paie">Paiement sécurisé</p>
 						</a>
@@ -162,14 +164,14 @@
 					</li>
 				</ul>
 			</div>
-		</div>	
-	</div>	
-	
-	
-	
+		</div>
+	</div>
+
+
+
 
 <?php include 'parts/footer.php' ?>
-	
+
 	<script src="vendors/Bootstrap/Bootstrap-Design/vendors/jquery/jquery.min.js"></script>
 	<script src="vendors/Bootstrap/Bootstrap-Design/vendors/popper/popper.min.js"></script>
 	<script src="vendors/Bootstrap/Bootstrap-Design/vendors/bootstrap/js/bootstrap.min.js"></script>
