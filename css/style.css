@@ -2,6 +2,7 @@
 /* CSS Document */
 
 
+
 /*__________________________HOME PAGE_______________________________*/
 
 
@@ -983,6 +984,7 @@ PAIEMENT
 .container_detail {
 	background : #fefdf0;
 	height: 80vh;
+	margin-bottom: 1rem;	
 }
 
 .container_detail .total_page {
@@ -999,16 +1001,81 @@ PAIEMENT
 	height: 10vh;
 }
 
-.column1{
+/*.column1{
 	display: flex;
 	margin: auto;
-}
+}*/
 
 .photo_ens{
 	margin: auto;
 }
 
-.ref_prod{
+.container_detail .present {
+/*
+	background: red;
+*/
 	margin: auto;
+	display: flex;
+	flex-direction: column;
+	color: #47360b;
+
+}
+
+.ref_prod{
+	margin: auto 4rem;
 	text-align: center;
+}
+
+.ref_prod h2{
+	font-style: italic;
+}
+
+.desc_prod h1{
+	margin: 1.5rem auto;
+	font-weight: bolder;
+	text-decoration: underline;
+}
+
+.desc_prod {
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+.cara_prod {
+	list-style: none;
+	margin-top: 4rem;
+	font-size: 1.6rem;
+}
+
+.prix-prod {
+	text-align: center;
+	margin-top: 2rem;
+	font-size: 2.3rem;
+	border: thin solid #47360b;
+	display: flex;
+}
+
+.prix-prod p{
+	margin: auto;
+}
+
+.container_detail .block-3 {
+	margin-right: 2rem;
+}
+
+.container_detail .block-3 .avis {
+	background: #47360b;
+	color: #fefdf0;
+	border-radius: 1rem;
+}
+
+.block-3 .avis h1,
+.block-3 .avis h2,
+.block-3 .avis p,
+.block-3 .avis img{
+	margin: .5rem;
+} 
+
+.block-3 .photo-fr {
+	margin: 1rem auto 0;
 }

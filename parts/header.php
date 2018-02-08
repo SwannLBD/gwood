@@ -18,11 +18,11 @@
 			<button type="submit" class="btn-connect">Connexion </button>
 			<a class="btn-connect-1" href="signin.php">S'inscrire !</a>
 		</form>
-<?php
-		if(isset($_GET['error_login'] && $_GET['error_login']===1)){
+<!--<?php
+		/*if(isset($_GET['error_login'] && $_GET['error_login']===1)){
 			echo "Erreur lors de votre connexion";
-		}
-?>
+		}*/
+?>-->
 	</div>
 <script>
 
