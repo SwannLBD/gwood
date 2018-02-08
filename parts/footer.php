@@ -8,7 +8,7 @@
 				<li class="pinterest">
 					<div class="box">
 						<a class="button" href="#popup1">
-							<img src="images/pinterest.png" class="logo_social_network">	
+							<img src="images/pinterest.png" class="logo_social_network">
 						</a>
 					</div>
 
@@ -17,7 +17,7 @@
 							<h2>Hey ! </h2>
 							<a class="close" href="#">&times;</a>
 							<div class="content">
-							Retrouvez nous sur Pinterest -> ProGWood.
+							Retrouvez nous sur Pinterest, ProGWood
 							</div>
 						</div>
 					</div>
@@ -25,7 +25,7 @@
 				<li class="twitter">
 					<div class="box">
 						<a class="button" href="#popup2">
-							<img src="images/twitter.png" class="logo_social_network">	
+							<img src="images/twitter.png" class="logo_social_network">
 						</a>
 					</div>
 
@@ -34,7 +34,7 @@
 							<h2>Hey ! </h2>
 							<a class="close" href="#">&times;</a>
 							<div class="content">
-							Retrouvez nous sur Twitter, -> @ProGWood.
+							Retrouvez nous sur Twitter, @ProGWood
 							</div>
 						</div>
 					</div>
@@ -42,7 +42,7 @@
 				<li class="instagram">
 					<div class="box">
 						<a class="button" href="#popup3">
-							<img src="images/instagram.png" class="logo_social_network">	
+							<img src="images/instagram.png" class="logo_social_network">
 						</a>
 					</div>
 
@@ -51,7 +51,7 @@
 							<h2>Hey ! </h2>
 							<a class="close" href="#">&times;</a>
 							<div class="content">
-							Retrouvez nous sur Instagram, -> ProGWood.
+							Retrouvez nous sur Instagram, ProGWood_Officiel
 							</div>
 						</div>
 					</div>
@@ -59,7 +59,7 @@
 				<li class="facebook">
 					<div class="box">
 						<a class="button" href="#popup4">
-							<img src="images/facebook.png" class="logo_social_network">	
+							<img src="images/facebook.png" class="logo_social_network">
 						</a>
 					</div>
 
@@ -68,7 +68,7 @@
 							<h2>Hey ! </h2>
 							<a class="close" href="#">&times;</a>
 							<div class="content">
-							Retrouvez nous sur Facebook, -> ProGWood.
+							Retrouvez nous sur Facebook, ProGWood_Officiel
 							</div>
 						</div>
 					</div>

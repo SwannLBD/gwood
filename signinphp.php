@@ -14,21 +14,21 @@ if(empty($_POST['nomUser'])) {
     $errors['nomUser'] = "votre nom n'est pas valide (Alphanumérique)";
 }
 
-//Si le prenomUser est vide
+//Si le prenomUser est vide, possiblité de rajouté des paramètres pour plus de précision
 if(empty($_POST['prenomUser'])) {
     $errors['prenomUser'] = "votre prénom n'est pas valide (Alphanumérique)";
 }
 
-//Si le pseudo est vide
+//Si le pseudo est vide,  possiblité de rajouté des paramètres pour plus de précision
 if(empty($_POST['pseudoUser'])) {
     $errors['pseudoUser'] = "votre pseudo n'est pas valide (Alphanumérique)";
 }
 
-//Si l'adresse mail est vide
+//Si l'adresse mail est vide,  possiblité de rajouté des paramètres pour plus de précision
 if(empty($_POST['mailUser'])) {
     $errors['mailUser'] = "Votre email n'est pas valide";
 }
-//Si le mot de passe est vide ou différent l'un l'autre
+//Si le mot de passe est vide ou différent l'un à l'autre
 if(empty($_POST['mdpUser']) || $_POST['mdpUser'] != $_POST['repeatmdpUser']){
     $errors['mdpUser'] = "Vous devez rentrer un mot de passe valide";
 }

@@ -13,7 +13,7 @@ $(document).ready(function () {
 	$('.block-center1 .texte_box').mouseout(function(){ //au passage de la souris, la taille de l'image de fond passe a 100px au lieu de 110%
 		$(this).css({
 			'background-size': 'auto 100%',
-			'border-radius': '1px'
+			'border-radius': '10px'
 		});
 	});
 
@@ -28,7 +28,7 @@ $(document).ready(function () {
 	$('.block-center1 .mini_box_2 .texte_box').mouseout(function(){ //au passage de la souris, la taille de l'image de fond passe a 100px au lieu de 110%
 		$(this).css({
 			'background-size': 'auto 100%',
-			'border-radius': '1px'
+			'border-radius': '10px'
 		});
 	});
 
@@ -42,12 +42,15 @@ $(document).ready(function () {
 	$('.block-center1 .mini_box_3 .texte_box').mouseout(function(){ //au passage de la souris, la taille de l'image de fond passe a 100px au lieu de 110%
 		$(this).css({
 			'background-size': 'auto 100%',
-			'border-radius': '1px'
+			'border-radius': '10px'
 		});
 	});
 
 
-
+	function adjust_textarea(h) {
+	    h.style.height = "20px";
+	    h.style.height = (h.scrollHeight)+"px";
+	}
 
 
 

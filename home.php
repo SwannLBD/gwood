@@ -140,8 +140,6 @@
 						<a>
 							<img class="fabrication" src="images/fabrication-francaise.png">
 							<p class="intitule_fab">Fabrication française</p>
-							</div>
-							<a class='button glyphicon glyphicon-plus' href='#'></a>
 						</a>
 					</li>
 					<li>

@@ -6,30 +6,24 @@ session_start();
 try
 {
     $bdd = new PDO('mysql:host=localhost;dbname=gwood', 'root', 'root');
-}
-catch (Exception $e) // Si erreur
-{
-        die('Erreur : ' . $e->getMessage());
+}catch (Exception $e){ // Si erreur
+    die('Erreur : ' . $e->getMessage());
 }
 
+$reponse_mail = $bdd->query('SELECT mailUser FROM User'); // Je cible le mailUser dans la table User
+$reponse_password = $bdd->query('SELECT mdpUser FROM User    '); // Je cible le mdpUser dans la table User
 
-//Je choisis le champ login
-$reponse_login = $bdd->query('SELECT mailUser FROM User'); // Je choisis de la base de donné login le champ login
-$reponse_password = $bdd->query('SELECT mdpUser FROM User    '); // Je choisis de la base de donné login le champ password
+//Je contrôle tous les champs
+while ($donnees = $reponse_mail->fetch() AND $donees2 = $reponse_password->fetch()) { //Si tous les champs ont étés complétés ...
 
-//Je vérifie tout mes champs logins
-while ($donnees = $reponse_login->fetch() AND $donees2 = $reponse_password->fetch()) // EDIT : Il n'y a plus d'erreur mais c'est à la ligne 20 maintenant
-{
-    if ($_POST['mailUser'] == $donnees['mailUser'] AND $_POST['mdpUser'] == $donees2['mdpUser']) // ERREUR ICI
-    {
-        // La suite de mon code qui y sera après que je n'ai plus d'erreur et pour l'instant c'est :
-        header('location: home.php');
-    }else{
-		/* echo"Votre mot de passe ou votre mail est incorrect, veuillez réessayer"; */
-    ('location: home.php?error_login=1');
+    if ($_POST['mailUser'] == $donnees['mailUser'] AND $_POST['mdpUser'] == $donees2['mdpUser']) { // Si le mdp et le mail sont identiques a la base de donnée...
+        header('location: home.php'); // Je redirige vers la page homr.php
+    }else{ // Sinon, si le mdp ou le mail est incorrect...
+		    echo"Votre mot de passe ou votre mail est incorrect, veuillez réessayer <br>";
 	}
 }
-$reponse_login->closeCursor(); // Termine le traitement de la requête
-$reponse_password->closeCursor(); // Termine le traitement de la requête
+$reponse_mail->closeCursor(); //Fin du traitement de la requête
+$reponse_password->closeCursor(); //Fin du traitement de la requête
+
 
 ?>

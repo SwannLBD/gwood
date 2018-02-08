@@ -16,13 +16,11 @@
 			<input type="text" class="mail" placeholder="Email" name="mailUser">
 			<input type="password" class="mdp" placeholder="Mot de passe" name="mdpUser">
 			<button type="submit" class="btn-connect">Connexion </button>
+		<div class="cctoi">
 			<a class="btn-connect-1" href="signin.php">S'inscrire !</a>
+			<a class="btn-connect-1" href="deco.php">Deconnexion</a>
+		</div>
 		</form>
-<?php
-		if(isset($_GET['error_login'] && $_GET['error_login']===1)){
-			echo "Erreur lors de votre connexion";
-		}
-?>
 	</div>
 <script>
 

@@ -23,10 +23,6 @@ body{
 	font-size: 4rem;
 }
 
-.block-center .carousel-control-next-icon{
-
-}
-
 .block-center .suite_page{
 	display: flex;
 	margin: auto;
@@ -111,6 +107,7 @@ body{
 	margin: 13px;
 	height: 210px;
 	margin-right: 30px;
+
 }
 
 .block-center .satisfait{
@@ -143,9 +140,6 @@ body{
 	margin-right: 30px;
 	margin-top: 13px;
 }
-
-
-
 
 
 
@@ -250,6 +244,7 @@ body{
 	width: 100%;
 	margin: auto;
 	display: flex;
+	border-radius: 10px;
 }
 
 .block-center1 .mini_box_2 .texte_box{
@@ -404,7 +399,16 @@ HEADER
 	font-size: 1rem;
 	color: black;
 	margin-top: .5rem;
+	margin: auto;
 }
+
+.cctoi{
+	margin: auto;
+}
+
+
+
+
 
 /*****************************************************************************************
 G.PHOTOS
@@ -1011,4 +1015,85 @@ PAIEMENT
 .ref_prod{
 	margin: auto;
 	text-align: center;
+}
+
+
+
+/*****************************************************************************************
+Formulaire d'inscription
+*****************************************************************************************/
+
+.form-style-4{
+    width: 1200px;
+    font-size: 16px;
+    background: #fefdf0;
+    padding: 30px 30px 15px 30px;
+    border: 5px solid #fefdf0;
+}
+.form-style-4 input[type=submit],
+.form-style-4 input[type=button],
+.form-style-4 input[type=text],
+.form-style-4 input[type=email],
+.form-style-4 textarea,
+.form-style-4 label
+{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 16px;
+    color: black;
+
+}
+.form-style-4 label {
+    display:block;
+    margin-bottom: 10px;
+		padding-top: 20px;
+}
+.form-style-4 label > span{
+    display: inline-block;
+    width: 400px;
+		font-size: 25px;
+}
+.form-style-4 input[type=text],
+.form-style-4 input[type=email]
+{
+    background: transparent;
+    border: none;
+    border-bottom: 1px dashed black;
+    width: 275px;
+    outline: none;
+    padding: 0px 0px 0px 0px;
+    font-style: italic;
+}
+.form-style-4 textarea{
+    font-style: italic;
+    padding: 0px 0px 0px 0px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px dashed black;
+    width: 275px;
+    overflow: hidden;
+    resize:none;
+    height:20px;
+}
+
+.form-style-4 textarea:focus,
+.form-style-4 input[type=text]:focus,
+.form-style-4 input[type=email]:focus,
+.form-style-4 input[type=email] :focus
+{
+    border-bottom: 1px dashed #D9FFA9;
+}
+
+.form-style-4 input[type=submit],
+.form-style-4 input[type=button]{
+    background: black;
+    border: none;
+    padding: 8px 10px 8px 10px;
+    border-radius: 5px;
+    color: #fefdf0;
+}
+.form-style-4 input[type=submit]:hover,
+.form-style-4 input[type=button]:hover{
+background: #fefdf0;
+color: black;
 }
