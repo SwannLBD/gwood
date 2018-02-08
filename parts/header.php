@@ -21,6 +21,14 @@
 			<a class="btn-connect-1" href="deco.php">Deconnexion</a>
 		</div>
 		</form>
+<<<<<<< HEAD
+=======
+<!--<?php
+		/*if(isset($_GET['error_login'] && $_GET['error_login']===1)){
+			echo "Erreur lors de votre connexion";
+		}*/
+?>-->
+>>>>>>> 3107f48b0439a50d8101754378d2e66ce99b9eee
 	</div>
 <script>
 

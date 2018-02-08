@@ -17,7 +17,8 @@
 
 	<?php
 
-	require('pdo/include/pdo.php');
+/*	require('pdo/include/pdo.php');*/
+	require('connectToDatabase.php');
 
 
 
